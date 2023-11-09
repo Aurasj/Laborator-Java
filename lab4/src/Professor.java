@@ -6,6 +6,11 @@ public class Professor extends Person {
                 surname + '}';
     }
 
+    @Override
+    public int compareTo(Student other) {
+        return 0;
+    }
+
     public Professor(String name, String surname) {
         this.name = name;
         this.surname = surname;
@@ -16,5 +21,8 @@ public class Professor extends Person {
         return name + " " + surname;
     }
 
+    public String getName() {
+        return this.name;
+    }
 
 }

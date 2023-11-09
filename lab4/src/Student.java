@@ -1,11 +1,12 @@
 public class Student extends Person{
-
+    private String group;
     int groupNumber;
 
-    public Student(String name, String surname, int groupNumber) {
+    public Student(String name, String surname, String groupNumber) {
         this.name = name;
         this.surname = surname;
-        this.groupNumber = groupNumber;
+        this.groupNumber = Integer.parseInt(groupNumber);
+        this.group = group;
     }
 
     @Override
@@ -41,5 +42,13 @@ public class Student extends Person{
 
     public String getFullname(){
         return name + " " + surname;
+    }
+
+    public String getGroup() {
+        return this.group;
+    }
+    @Override
+    public int compareTo(Student other) {
+        return this.name.compareTo(other.name);
     }
 }
