@@ -1,9 +1,5 @@
 import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Comparator;
+import java.util.*;
 
 public class CourseManager implements ManagerCourseOperations {
     String name;
